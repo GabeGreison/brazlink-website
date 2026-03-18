@@ -1,5 +1,6 @@
 import FloatingButton from "./components/floating-button";
 import Header from "./components/header";
+import Hero from "./components/hero";
 import PromoSection from "./components/promo";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
     <div className="max-w-240 mx-auto relative">
     <PromoSection/>
     <FloatingButton/>
+    <Hero/>
     </div>
    </div>
   );
