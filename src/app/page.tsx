@@ -1,3 +1,4 @@
+import Brands from "./components/brands";
 import FloatingButton from "./components/floating-button";
 import Header from "./components/header";
 import Hero from "./components/hero";
@@ -11,6 +12,7 @@ export default function Home() {
     <PromoSection/>
     <FloatingButton/>
     <Hero/>
+    <Brands/>
     </div>
    </div>
   );
