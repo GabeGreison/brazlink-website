@@ -6,7 +6,7 @@ export default function Header() {
     <header className="w-full border-b border-brand-light">
       <div className="mx-auto w-full max-w-240">
 
-        <div className="flex flex-col gap-4 md:justify-between items-center py-6 md:flex-row md:items-end">
+        <div className="flex flex-col gap-8 md:gap-4 md:justify-between items-center py-6 md:flex-row md:items-end">
 
           <Image
             src="/images/brazlink-logo.svg"
@@ -14,7 +14,7 @@ export default function Header() {
             width={320}
             height={200}
             priority
-            className="h-auto w-45 md:w-65"
+            className="h-auto w-55 md:w-65"
           />
 
           <nav className="gap-2 md:gap-4 flex items-end text-xl md:text-3xl text-brand-dark">
