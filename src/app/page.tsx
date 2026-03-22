@@ -5,6 +5,7 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import PromoSection from "./components/promo";
 import GalleryCarousel from "./components/gallery-carousel";
+import SolutionSection from "./components/solutions-section";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
     <Brands/>
     <HeroGallery/>
     <GalleryCarousel />
+    <SolutionSection/>
     <FloatingButton/>
     </div>
    </div>

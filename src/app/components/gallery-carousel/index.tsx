@@ -10,8 +10,8 @@ import {
 
 const items = [
     { title: "Vídeos Redes sociais" },
-    { title: "Impressão Corporativa" },
-    { title: "Digitalização de documentos" },
+    { title: "Vídeos Redes sociais 2" },
+    { title: "Vídeos Redes sociais 3" },
 ];
 
 export default function Gallery() {
@@ -35,9 +35,9 @@ export default function Gallery() {
                         ))}
                     </CarouselContent>
 
-                    <CarouselPrevious className="hidden md:block -left-16 md:-left-20 text-pink-500 border-none bg-transparent hover:bg-transparent [&>svg]:w-10 [&>svg]:h-10" />
+                    <CarouselPrevious className="hidden md:block -left-16 md:-left-20 text-pink-500 border-none bg-transparent hover:bg-transparent" />
 
-                    <CarouselNext className="hidden md:block -right-16 md:-right-20 text-pink-500 border-none bg-transparent hover:bg-transparent [&>svg]:w-10 [&>svg]:h-10" />
+                    <CarouselNext className="hidden md:block -right-16 md:-right-20 text-pink-500 border-none bg-transparent hover:bg-transparent" />
                 </Carousel>
             </div>
         </section>
