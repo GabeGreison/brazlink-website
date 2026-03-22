@@ -9,8 +9,9 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import SummarySection from "../summary-section";
 
-export default function EquipmentsCarousel() {
+export default function ProductsSection() {
   const [api, setApi] = useState<CarouselApi>();
   const [active, setActive] = useState(0);
 
@@ -73,7 +74,7 @@ export default function EquipmentsCarousel() {
                       object-contain transition-all duration-300
                       ${isActive
                         ? "scale-100 z-2 opacity-100"
-                        : "scale-75 z-1 opacity-40"
+                        : "scale-65 z-1 opacity-40"
                       }
                       max-w-55 md:max-w-65
                     `}
@@ -92,6 +93,7 @@ export default function EquipmentsCarousel() {
         </Carousel>
 
       </div>
+      <SummarySection/>
     </section>
   );
 }

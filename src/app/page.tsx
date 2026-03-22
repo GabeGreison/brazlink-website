@@ -5,8 +5,9 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import PromoSection from "./components/promo";
 import GalleryCarousel from "./components/gallery-carousel";
-import SolutionSection from "./components/solutions-title";
+import SolutionsSection from "./components/solutions-section";
 import ProductsSection from "./components/products-section";
+import SummarySection from "./components/summary-section";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
     <Brands/>
     <HeroGallery/>
     <GalleryCarousel />
-    <SolutionSection/>
+    <SolutionsSection/>
     <ProductsSection />
     <FloatingButton/>
     </div>

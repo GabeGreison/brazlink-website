@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function WhatsappButton() {
+export default function FloatingButton() {
   const phone = "test";
   const message = "Olá! Vim pelo site e gostaria de mais informações.";
 
