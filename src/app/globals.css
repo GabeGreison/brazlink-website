@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-brand: #2A7DB8;
@@ -19,3 +23,4 @@ body {
   color: var(--color-text);
   font-family: var(--font-neris), sans-serif;
 }
+
