@@ -18,6 +18,10 @@
   --color-text: #6B6B6B;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-background);
   color: var(--color-text);

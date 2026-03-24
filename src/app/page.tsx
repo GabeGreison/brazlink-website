@@ -9,6 +9,8 @@ import SolutionsSection from "./components/solutions-section";
 import ProductsSection from "./components/products-section";
 import ContactUs from "./components/contact-us";
 import ValuesHero from "./components/values-hero";
+import Testimonials from "./components/testmonials";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
     <ProductsSection />
     <ValuesHero/>
     <ContactUs/>
+    <Testimonials/>
+    <Footer/>
     <FloatingButton/>
     </div>
    </div>

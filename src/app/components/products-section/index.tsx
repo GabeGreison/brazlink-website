@@ -39,7 +39,7 @@ export default function ProductsSection() {
   }, [api]);
 
   return (
-    <section className="w-full py-16 bg-background overflow-hidden">
+    <section id="equips" className="w-full py-16 bg-background overflow-hidden">
 
       <div className="max-w-5xl mx-auto text-center mb-10 px-6">
         <h2 className="text-brand-dark text-2xl md:text-4xl font-medium mb-4">

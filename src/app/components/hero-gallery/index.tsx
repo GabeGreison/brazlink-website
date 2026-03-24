@@ -5,7 +5,7 @@ const metrics = [
 
 export default function HeroGallery() {
   return (
-    <section className="w-full bg-white py-20 px-6">
+    <section id="gallery" className="w-full bg-white py-20 px-6">
       <div className="max-w-240 mx-auto text-center">
         <h2 className="text-brand-dark text-2xl md:text-4xl font-light leading-snug mb-16 max-w-180 mx-auto">
           Soluções completas em impressão e digitalização para empresas que querem

@@ -18,15 +18,15 @@ export default function Header() {
           />
 
           <nav className="gap-2 md:gap-4 flex items-end text-xl md:text-3xl text-brand-dark">
-            <a href="#missao" className="flex items-end">
+            <a href="#mission" className="flex items-end">
               Missão <ChevronDownIcon className="w-5 h-5 text-purple" />
             </a>
 
-            <a href="#equipamentos" className="flex items-end">
+            <a href="#equips" className="flex items-end">
               Equipamentos <ChevronDownIcon className="w-5 h-5 text-purple" />
             </a>
 
-            <a href="#galeria" className="flex items-end">
+            <a href="#gallery" className="flex items-end">
               Galeria <ChevronDownIcon className="w-5 h-5 text-purple" />
             </a>
           </nav>

@@ -1,6 +1,6 @@
 export default function ValuesHero() {
   return (
-    <section className="w-full h-[80vh] md:h-full">
+    <section id="mission" className="w-full h-[80vh] md:h-full transition-all ease-in">
       <div className="relative w-full h-full">
         <img
           src="/images/rocket.png"
@@ -8,12 +8,7 @@ export default function ValuesHero() {
           className="w-full h-full object-cover brightness-150"
         />
 
-        <div className="
-          absolute inset-0
-          flex flex-col items-center
-          text-center
-           pt-2 md:pt-2
-          px-6
+        <div className="absolute inset-0 flex flex-col items-center text-center pt-2 md:pt-2 px-6
         ">
           <div className="flex flex-col pb-5 pt-10 md:max-w-[80%]">
             <h2 className="text-2xl md:text-4xl text-brand-light font-bold tracking-wider mb-2 md:mb-4">
