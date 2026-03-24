@@ -7,7 +7,7 @@ import PromoSection from "./components/promo";
 import GalleryCarousel from "./components/gallery-carousel";
 import SolutionsSection from "./components/solutions-section";
 import ProductsSection from "./components/products-section";
-import SummarySection from "./components/summary-section";
+import ContactUs from "./components/contact-us";
 import ValuesHero from "./components/values-hero";
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
     <SolutionsSection/>
     <ProductsSection />
     <ValuesHero/>
+    <ContactUs/>
     <FloatingButton/>
     </div>
    </div>
