@@ -8,6 +8,7 @@ import GalleryCarousel from "./components/gallery-carousel";
 import SolutionsSection from "./components/solutions-section";
 import ProductsSection from "./components/products-section";
 import SummarySection from "./components/summary-section";
+import ValuesHero from "./components/values-hero";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
     <GalleryCarousel />
     <SolutionsSection/>
     <ProductsSection />
+    <ValuesHero/>
     <FloatingButton/>
     </div>
    </div>
