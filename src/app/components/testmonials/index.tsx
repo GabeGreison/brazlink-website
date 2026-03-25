@@ -23,16 +23,16 @@ export default function Testimonials() {
 
     const testimonials: Testimonial[] = [
         {
-            image: "/images/test1.png",
+            image: "/images/chama-logo.jpeg",
             name: "Fulano da Silva",
-            company: "Mapple Bear",
-            subtitle: "Cliente desde XXX",
+            company: "HOSPITAL CHAMA",
+            subtitle: "Há 5 anos o Setor de Imagem do Hospital CHAMA trabalha com a Brazlink. Desde o início da parceria, o atendimento tem sido de excelência, sempre correspondendo às nossas expectativas. Sempre que abrimos chamado, somos atendidos com rapidez e a equipe é enviada prontamente, garantindo que nossos serviços não sejam interrompidos. É uma parceria que nos transmite confiança e segurança.",
         },
         {
-            image: "/images/test2.png",
-            name: "Ciclano",
-            company: "Empresa X",
-            subtitle: "Cliente desde XXX",
+            image: "/images/pestalozzi-logo.jpeg",
+            name: "Ciclano da Silva",
+            company: "ASSOCIAÇÃO PESTALOZZI",
+            subtitle: " Por intermédio de sua representante legal, a Sra TEREZA MARIA BARRETO DO AMARAL, declara para os devidos fins que a empresa Brazlink nos presta serviços desde 2019, sempre demonstrando elevado nível de profissionalismo, competência e comprometimento.",
         },
     ];
 
@@ -70,7 +70,7 @@ export default function Testimonials() {
                                 className="flex flex-col items-center"
                             >
 
-                                <div className="w-full max-w-[50%] h-62.5 md:h-87.5 border border-gray-400 flex items-center justify-center mb-6">
+                                <div className="w-full max-w-[50%] h-62.5 md:h-87.5 flex items-center justify-center mb-6">
                                     <img
                                         src={item.image}
                                         alt={item.name}
@@ -93,8 +93,8 @@ export default function Testimonials() {
                     </CarouselContent>
 
 
-                    <CarouselPrevious className="hidden md:block translate-y-38 translate-x-64 text-accent border-none bg-transparent hover:bg-transparent" />
-                    <CarouselNext className="hidden md:block translate-y-38 -translate-x-64 text-accent border-none bg-transparent hover:bg-transparent" />
+                    <CarouselPrevious className="hidden md:block translate-x-58 text-accent border-none bg-transparent hover:bg-transparent" />
+                    <CarouselNext className="hidden md:block -translate-x-58 text-accent border-none bg-transparent hover:bg-transparent" />
 
                 </Carousel>
 

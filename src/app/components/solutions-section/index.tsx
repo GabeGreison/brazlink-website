@@ -40,7 +40,7 @@ export default function SolutionsContent() {
         </div>
 
         <div className="flex justify-center">
-          <button className="px-8 py-3 rounded-full border border-white text-white text-lg md:text-3xl font-medium">
+          <button className="cursor-pointer px-8 py-3 rounded-full border border-white text-white text-lg md:text-3xl font-medium">
             Quero saber mais sobre as soluções
           </button>
         </div>
