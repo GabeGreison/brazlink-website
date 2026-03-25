@@ -86,9 +86,9 @@ export default function ProductsSection() {
           </CarouselContent>
 
         
-          <CarouselPrevious className="hidden md:block left-1/2 -translate-x-[700%] top-1/2 -translate-y-1/2 text-accent border-none bg-transparent hover:bg-transparent" />
+          <CarouselPrevious className="hidden md:block left-1/2  top-1/2 -translate-x-56 -translate-y-1/2 text-accent border-none bg-transparent hover:bg-transparent" />
 
-          <CarouselNext className="hidden right-1/2 md:block translate-x-[700%] top-1/2 -translate-y-1/2 text-accent border-none bg-transparent hover:bg-transparent" />
+          <CarouselNext className="hidden right-1/2 md:block  top-1/2 translate-x-56 -translate-y-1/2 text-accent border-none bg-transparent hover:bg-transparent" />
 
         </Carousel>
 

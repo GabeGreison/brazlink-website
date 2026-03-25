@@ -93,8 +93,8 @@ export default function Testimonials() {
                     </CarouselContent>
 
 
-                    <CarouselPrevious className="hidden md:block -left-12 text-accent border-none bg-transparent hover:bg-transparent" />
-                    <CarouselNext className="hidden md:block -right-12 text-accent border-none bg-transparent hover:bg-transparent" />
+                    <CarouselPrevious className="hidden md:block translate-y-38 translate-x-64 text-accent border-none bg-transparent hover:bg-transparent" />
+                    <CarouselNext className="hidden md:block translate-y-38 -translate-x-64 text-accent border-none bg-transparent hover:bg-transparent" />
 
                 </Carousel>
 
