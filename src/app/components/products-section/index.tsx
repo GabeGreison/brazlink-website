@@ -16,11 +16,11 @@ export default function ProductsSection() {
   const [active, setActive] = useState(0);
 
      const items = [
-        "/images/products/canon-2.jpg",
-        "/images/products/canon-multi.jpg",
-        "/images/products/hp.jpg",
-        "/images/products/kyocera.jpg",
-        "/images/products/xerox.jpg"
+        "/images/products/canon-2.png",
+        "/images/products/canon-multi.png",
+        "/images/products/hp.png",
+        "/images/products/kyocera.png",
+        "/images/products/xerox.png"
     ];
 
   useEffect(() => {

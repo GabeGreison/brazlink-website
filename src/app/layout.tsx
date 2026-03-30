@@ -1,5 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import type { Metadata } from "next";
 
 const neris = localFont({
   src: [
@@ -20,7 +21,14 @@ const neris = localFont({
     },
   ],
   variable: "--font-neris",
+  display: "swap",
 });
+
+export const metadata: Metadata = {
+  title: "Grupo Brazlink | Soluções completas em impressão e digitalização",
+  description:
+    "Alugue impressoras, multifuncionais e notebooks com manutenção inclusa. É mais economia e eficiência pra sua empresa!",
+};
 
 export default function RootLayout({
   children,
@@ -28,10 +36,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={neris.className}
-      >
+    <html lang="pt-BR">
+      <body className={neris.className}>
         {children}
       </body>
     </html>

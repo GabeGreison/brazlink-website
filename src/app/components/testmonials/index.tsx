@@ -2,24 +2,24 @@
 
 import { useEffect, useState } from "react";
 import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-    type CarouselApi,
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 
 type Testimonial = {
-    image: string;
-    name: string;
-    company: string;
-    subtitle: string;
+  image: string;
+  name: string;
+  company: string;
+  subtitle: string;
 };
 
 export default function Testimonials() {
-    const [api, setApi] = useState<CarouselApi>();
-    const [active, setActive] = useState(0);
+  const [api, setApi] = useState<CarouselApi>();
+  const [active, setActive] = useState(0);
 
     const testimonials: Testimonial[] = [
         {
@@ -36,83 +36,101 @@ export default function Testimonials() {
         },
     ];
 
-    useEffect(() => {
-        if (!api) return;
+  useEffect(() => {
+    if (!api) return;
 
-        const onSelect = () => {
-            setActive(api.selectedScrollSnap());
-        };
+    const onSelect = () => {
+      setActive(api.selectedScrollSnap());
+    };
 
-        onSelect();
-        api.on("select", onSelect);
+    onSelect();
+    api.on("select", onSelect);
 
-        return () => {
-            api.off("select", onSelect);
-        };
-    }, [api]);
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api]);
 
-    return (
-        <section className="w-full bg-background py-20 px-6 text-center">
+  return (
+    <section
+      className="w-full bg-background py-20 px-6 text-center"
+      aria-label="Depoimentos de clientes"
+    >
+      <h2 className="text-brand-light text-2xl md:text-4xl mb-10">
+        Depoimentos
+      </h2>
 
-            <h2 className="text-brand-light text-2xl md:text-4xl mb-10">
-                Depoimentos
-            </h2>
+      <div className="relative max-w-4xl mx-auto">
+        <Carousel
+          setApi={setApi}
+          opts={{ align: "center", loop: true }}
+        >
+          <CarouselContent>
+            {testimonials.map((item, index) => (
+              <CarouselItem
+                key={index}
+                className="flex flex-col items-center"
+                role="group"
+                aria-roledescription="slide"
+                aria-label={`Depoimento ${index + 1} de ${testimonials.length}`}
+              >
+                <div className="w-full max-w-[50%] h-62.5 md:h-87.5 flex items-center justify-center mb-6">
+                  <img
+                    src={item.image}
+                    alt={`Logo da empresa ${item.company}`}
+                    className="object-contain h-full"
+                  />
+                </div>
 
-            <div className="relative max-w-4xl mx-auto">
+                <div>
+                  <p className="text-lg md:text-2xl text-text">
+                    {item.name} - {item.company}
+                  </p>
+                  <span className="text-brand-dark text-sm md:text-base">
+                    {item.subtitle}
+                  </span>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
 
-                <Carousel setApi={setApi} opts={{ align: "center", loop: true }}>
+          {/* SETAS */}
+          <CarouselPrevious
+            aria-label="Depoimento anterior"
+            className="hidden md:block translate-x-58 text-accent border-none bg-transparent hover:bg-transparent"
+          />
+          <CarouselNext
+            aria-label="Próximo depoimento"
+            className="hidden md:block -translate-x-58 text-accent border-none bg-transparent hover:bg-transparent"
+          />
+        </Carousel>
+      </div>
 
-                    <CarouselContent>
-
-                        {testimonials.map((item, index) => (
-                            <CarouselItem
-                                key={index}
-                                className="flex flex-col items-center"
-                            >
-
-                                <div className="w-full max-w-[50%] h-62.5 md:h-87.5 flex items-center justify-center mb-6">
-                                    <img
-                                        src={item.image}
-                                        alt={item.name}
-                                        className="object-contain h-full"
-                                    />
-                                </div>
-
-
-                                <div>
-                                    <p className="text-lg md:text-2xl text-text">
-                                        {item.name} - {item.company}
-                                    </p>
-                                    <span className="text-brand-dark text-sm md:text-base">
-                                        {item.subtitle}
-                                    </span>
-                                </div>
-                            </CarouselItem>
-                        ))}
-
-                    </CarouselContent>
-
-
-                    <CarouselPrevious className="hidden md:block translate-x-58 text-accent border-none bg-transparent hover:bg-transparent" />
-                    <CarouselNext className="hidden md:block -translate-x-58 text-accent border-none bg-transparent hover:bg-transparent" />
-
-                </Carousel>
-
-            </div>
-
-            <div className="flex justify-center gap-3 mt-10">
-                {testimonials.map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => api?.scrollTo(index)}
-                        className={`
-              w-2.5 h-2.5 rounded-full
+      {/* DOTS */}
+      <div
+        className="flex justify-center gap-3 mt-10"
+        role="tablist"
+        aria-label="Selecionar depoimento"
+      >
+        {testimonials.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => api?.scrollTo(index)}
+            aria-label={`Ir para depoimento ${index + 1}`}
+            aria-selected={index === active}
+            role="tab"
+            className={`
+              w-3 h-3 flex items-center justify-center
+              rounded-full
               ${index === active ? "bg-text" : "bg-gray-400"}
             `}
-                    />
-                ))}
-            </div>
-
-        </section>
-    );
+          >
+            <span className="sr-only">
+              Depoimento {index + 1}
+            </span>
+          </button>
+        ))}
+      </div>
+    </section>
+  );
 }
