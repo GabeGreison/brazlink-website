@@ -20,7 +20,7 @@ export default function SummarySection() {
             Fale Conosco!
           </span>
 
-          <WhatsappButton color="#1f5b8f"/>
+          <WhatsappButton color="#1f5b8f" />
 
         </div>
 

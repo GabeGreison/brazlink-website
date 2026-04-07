@@ -22,7 +22,7 @@ export default function Hero() {
             Fale Conosco!
           </h2>
 
-            <WhatsappButton />
+          <WhatsappButton />
         </div>
 
       </div>

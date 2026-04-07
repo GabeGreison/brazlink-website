@@ -15,13 +15,13 @@ export default function ProductsSection() {
   const [api, setApi] = useState<CarouselApi>();
   const [active, setActive] = useState(0);
 
-     const items = [
-        "/images/products/canon-2.png",
-        "/images/products/canon-multi.png",
-        "/images/products/hp.png",
-        "/images/products/kyocera.png",
-        "/images/products/xerox.png"
-    ];
+  const items = [
+    "/images/products/canon-2.png",
+    "/images/products/canon-multi.png",
+    "/images/products/hp.png",
+    "/images/products/kyocera.png",
+    "/images/products/xerox.png"
+  ];
 
   useEffect(() => {
     if (!api) return;
@@ -85,7 +85,7 @@ export default function ProductsSection() {
 
           </CarouselContent>
 
-        
+
           <CarouselPrevious className="hidden md:block left-1/2  top-1/2 -translate-x-56 -translate-y-1/2 text-accent border-none bg-transparent hover:bg-transparent" />
 
           <CarouselNext className="hidden right-1/2 md:block  top-1/2 translate-x-56 -translate-y-1/2 text-accent border-none bg-transparent hover:bg-transparent" />
@@ -93,7 +93,7 @@ export default function ProductsSection() {
         </Carousel>
 
       </div>
-      <SummarySection/>
+      <SummarySection />
     </section>
   );
 }

@@ -25,7 +25,7 @@ export default function BackToTop() {
           behavior: "smooth",
         })
       }
-      className="fixed cursor-pointer right-12 bottom-20 md:bottom-26 z-50 w-12 h-12 md:w-20 md:h-20 rounded-full bg-brand-dark flex items-center justify-center transition hover:opacity-90"
+      className="fixed cursor-pointer right-[8%] bottom-20 z-50 w-12 h-12 md:w-20 md:h-20 rounded-full bg-brand-dark flex items-center justify-center transition hover:opacity-90"
     >
       <ChevronUpIcon className="w-10 h-10 md:w-12 md:h-12  text-white md:stroke-4" />
     </button>

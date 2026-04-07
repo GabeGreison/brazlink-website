@@ -14,12 +14,18 @@ export default function Footer() {
           <p className="text-xl text-brand-dark">Farol - CEP 57.051-040</p>
         </div>
 
-        
-        <button className="bg-brand-dark text-white px-8 py-2 text-center rounded-full tracking-widest mb-12">
-          como chegar
-        </button>
+        <a
+          href="https://maps.app.goo.gl/o2xpzyYzRsU4EStJ8?g_st=ic"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=" mb-12"
+        >
+          <button className="bg-brand-dark text-white px-8 py-2 text-center rounded-full tracking-widest cursor-pointer">
+            como chegar
+          </button>
+        </a>
 
-      
+
         <h3 className="text-4xl md:text-4xl text-text font-semibold mb-8">
           Nossos canais:
         </h3>

@@ -5,9 +5,9 @@ import SolutionTitle from "../solutions-title";
 
 export default function SolutionsContent() {
   return (
-    
+
     <section className="w-full px-10 pb-28 bg-purple">
-        <SolutionTitle/>
+      <SolutionTitle />
 
       <div className="max-w-6xl mx-auto flex flex-col gap-30">
 
@@ -36,13 +36,17 @@ export default function SolutionsContent() {
               "Acesso a equipamentos de alta performance",
             ]}
           />
-
         </div>
 
         <div className="flex justify-center">
-          <button className="cursor-pointer px-8 py-3 rounded-full border border-white text-white text-lg md:text-3xl font-medium">
+          <a
+            href="/pdf/portfolio.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer px-8 py-3 rounded-full border border-white text-white text-lg md:text-3xl font-medium inline-block text-center"
+          >
             Quero saber mais sobre as soluções
-          </button>
+          </a>
         </div>
 
       </div>

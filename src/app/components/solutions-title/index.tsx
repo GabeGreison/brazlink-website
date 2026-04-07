@@ -1,5 +1,5 @@
 export default function SolutionSection() {
-  return (  
+  return (
     <section className="w-full py-24 bg-purple">
       <div className="max-w-4xl mx-auto text-center flex flex-col gap-12">
 

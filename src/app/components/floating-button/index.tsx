@@ -1,13 +1,12 @@
 import Image from "next/image";
 
 export default function FloatingButton() {
-  const phone = "test";
-  const message = "Olá! Vim pelo site e gostaria de mais informações.";
+  const phone = "5582993719350";
 
-  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  const url = `https://wa.me/${phone}`;
 
   return (
-    <div className="fixed bottom-20 -left-80 w-full max-w-240 md:-translate-x-1/2 px-6 z-50">
+    <div className="fixed bottom-20 right-[75%] md:right-[80%] lg:right-[85%] w-full max-w-240 px-6 z-50">
       <a
         href={url}
         target="_blank"

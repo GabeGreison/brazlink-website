@@ -21,20 +21,20 @@ export default function Testimonials() {
   const [api, setApi] = useState<CarouselApi>();
   const [active, setActive] = useState(0);
 
-    const testimonials: Testimonial[] = [
-        {
-            image: "/images/chama-logo.jpeg",
-            name: "Fulano da Silva",
-            company: "HOSPITAL CHAMA",
-            subtitle: "Há 5 anos o Setor de Imagem do Hospital CHAMA trabalha com a Brazlink. Desde o início da parceria, o atendimento tem sido de excelência, sempre correspondendo às nossas expectativas. Sempre que abrimos chamado, somos atendidos com rapidez e a equipe é enviada prontamente, garantindo que nossos serviços não sejam interrompidos. É uma parceria que nos transmite confiança e segurança.",
-        },
-        {
-            image: "/images/pestalozzi-logo.jpeg",
-            name: "Ciclano da Silva",
-            company: "ASSOCIAÇÃO PESTALOZZI",
-            subtitle: " Por intermédio de sua representante legal, a Sra TEREZA MARIA BARRETO DO AMARAL, declara para os devidos fins que a empresa Brazlink nos presta serviços desde 2019, sempre demonstrando elevado nível de profissionalismo, competência e comprometimento.",
-        },
-    ];
+  const testimonials: Testimonial[] = [
+    {
+      image: "/images/chama-logo.jpeg",
+      name: "Fulano da Silva",
+      company: "HOSPITAL CHAMA",
+      subtitle: "Há 5 anos o Setor de Imagem do Hospital CHAMA trabalha com a Brazlink. Desde o início da parceria, o atendimento tem sido de excelência, sempre correspondendo às nossas expectativas. Sempre que abrimos chamado, somos atendidos com rapidez e a equipe é enviada prontamente, garantindo que nossos serviços não sejam interrompidos. É uma parceria que nos transmite confiança e segurança.",
+    },
+    {
+      image: "/images/pestalozzi-logo.jpeg",
+      name: "Ciclano da Silva",
+      company: "ASSOCIAÇÃO PESTALOZZI",
+      subtitle: " Por intermédio de sua representante legal, a Sra TEREZA MARIA BARRETO DO AMARAL, declara para os devidos fins que a empresa Brazlink nos presta serviços desde 2019, sempre demonstrando elevado nível de profissionalismo, competência e comprometimento.",
+    },
+  ];
 
   useEffect(() => {
     if (!api) return;
@@ -74,17 +74,17 @@ export default function Testimonials() {
                 aria-roledescription="slide"
                 aria-label={`Depoimento ${index + 1} de ${testimonials.length}`}
               >
-                <div className="w-full max-w-[50%] h-62.5 md:h-87.5 flex items-center justify-center mb-6">
+                <div className="w-full max-w-[50%] md:h-87.5 flex items-center justify-center">
                   <img
                     src={item.image}
                     alt={`Logo da empresa ${item.company}`}
-                    className="object-contain h-full"
+                    className="object-contain h-50"
                   />
                 </div>
 
                 <div>
                   <p className="text-lg md:text-2xl text-text">
-                    {item.name} - {item.company}
+                    {item.company}
                   </p>
                   <span className="text-brand-dark text-sm md:text-base">
                     {item.subtitle}
@@ -94,7 +94,7 @@ export default function Testimonials() {
             ))}
           </CarouselContent>
 
-          {/* SETAS */}
+
           <CarouselPrevious
             aria-label="Depoimento anterior"
             className="hidden md:block translate-x-58 text-accent border-none bg-transparent hover:bg-transparent"
@@ -106,7 +106,7 @@ export default function Testimonials() {
         </Carousel>
       </div>
 
-      {/* DOTS */}
+
       <div
         className="flex justify-center gap-3 mt-10"
         role="tablist"
