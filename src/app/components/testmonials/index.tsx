@@ -29,7 +29,7 @@ export default function Testimonials() {
     {
       image: "/images/pestalozzi-logo.jpeg",
       company: "ASSOCIAÇÃO PESTALOZZI",
-      subtitle: " Por intermédio de sua representante legal, a Sra TEREZA MARIA BARRETO DO AMARAL, declara para os devidos fins que a empresa Brazlink nos presta serviços desde 2019, sempre demonstrando elevado nível de profissionalismo, competência e comprometimento.",
+      subtitle: "Por intermédio de sua representante legal, a Sra TEREZA MARIA BARRETO DO AMARAL, declara para os devidos fins que a empresa Brazlink nos presta serviços desde 2019, sempre demonstrando elevado nível de profissionalismo, competência e comprometimento.",
     },
     {
       image: "/images/ortoclinica-logo.png",
@@ -39,7 +39,7 @@ export default function Testimonials() {
     {
       image: "/images/prefeitura-maragogi-logo.png",
       company: "PREFEITURA MARAGOGI",
-      subtitle: "A parceria com a empresa Brazlink nos trouxe uma gestao otima para nossas demandas de locação de impresoras e notebooks, com baixo custo e ótima qualidade",
+      subtitle: "A parceria com a empresa Brazlink nos trouxe uma gestão ótima para nossas demandas de locação de impresoras e notebooks, com baixo custo e ótima qualidade",
     },
   ];
 
