@@ -12,7 +12,6 @@ import {
 
 type Testimonial = {
   image: string;
-  name: string;
   company: string;
   subtitle: string;
 };
@@ -24,15 +23,23 @@ export default function Testimonials() {
   const testimonials: Testimonial[] = [
     {
       image: "/images/chama-logo.jpeg",
-      name: "Fulano da Silva",
       company: "HOSPITAL CHAMA",
       subtitle: "Há 5 anos o Setor de Imagem do Hospital CHAMA trabalha com a Brazlink. Desde o início da parceria, o atendimento tem sido de excelência, sempre correspondendo às nossas expectativas. Sempre que abrimos chamado, somos atendidos com rapidez e a equipe é enviada prontamente, garantindo que nossos serviços não sejam interrompidos. É uma parceria que nos transmite confiança e segurança.",
     },
     {
       image: "/images/pestalozzi-logo.jpeg",
-      name: "Ciclano da Silva",
       company: "ASSOCIAÇÃO PESTALOZZI",
       subtitle: " Por intermédio de sua representante legal, a Sra TEREZA MARIA BARRETO DO AMARAL, declara para os devidos fins que a empresa Brazlink nos presta serviços desde 2019, sempre demonstrando elevado nível de profissionalismo, competência e comprometimento.",
+    },
+    {
+      image: "/images/ortoclinica-logo.png",
+      company: "ORTOCLINICA",
+      subtitle: "A Brazlink se destaca pela qualidade dos materiais e pela expertise técnica de sua equipe. É um parceiro estratégico que oferece qualidade excepcional e confiança em cada execução.",
+    },
+    {
+      image: "/images/prefeitura-maragogi-logo.png",
+      company: "PREFEITURA MARAGOGI",
+      subtitle: "A parceria com a empresa Brazlink nos trouxe uma gestao otima para nossas demandas de locação de impresoras e notebooks, com baixo custo e ótima qualidade",
     },
   ];
 
@@ -82,8 +89,8 @@ export default function Testimonials() {
                   />
                 </div>
 
-                <div>
-                  <p className="text-lg md:text-2xl text-text">
+                <div className="md:max-w-[70%]">
+                  <p className="text-lg md:text-2xl mb-2 text-text">
                     {item.company}
                   </p>
                   <span className="text-brand-dark text-sm md:text-base">
