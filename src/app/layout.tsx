@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   title: "Grupo Brazlink | Soluções completas em impressão e digitalização",
   description:
     "Alugue impressoras, multifuncionais e notebooks com manutenção inclusa. É mais economia e eficiência pra sua empresa!",
+  icons: {
+    icon: "favicon.png",
+  },
 };
 
 export default function RootLayout({

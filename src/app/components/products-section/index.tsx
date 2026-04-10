@@ -17,10 +17,12 @@ export default function ProductsSection() {
 
   const items = [
     "/images/products/canon-2.png",
+    "/images/products/dell-laptop.png",
     "/images/products/canon-multi.png",
-    "/images/products/hp.png",
+    "/images/products/acer-projector.webp",
     "/images/products/kyocera.png",
-    "/images/products/xerox.png"
+    "/images/products/xerox.png",
+    "/images/products/hp.png",
   ];
 
   useEffect(() => {
