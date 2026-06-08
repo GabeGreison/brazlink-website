@@ -7,15 +7,17 @@ export default function Header() {
       <div className="mx-auto w-full max-w-240">
 
         <div className="flex flex-col gap-8 md:gap-4 md:justify-between items-center py-6 md:flex-row md:items-end">
+          <a href="/">
+            <Image
+              src="/images/brazlink-logo.svg"
+              alt="Grupo Brazlink"
+              width={320}
+              height={200}
+              priority
+              className="h-auto w-55 md:w-65"
+            />
+          </a>
 
-          <Image
-            src="/images/brazlink-logo.svg"
-            alt="Grupo Brazlink"
-            width={320}
-            height={200}
-            priority
-            className="h-auto w-55 md:w-65"
-          />
 
           <nav className="gap-2 md:gap-4 flex items-end text-xl md:text-3xl text-brand-dark">
             <a href="#mission" className="flex items-end">
@@ -28,6 +30,10 @@ export default function Header() {
 
             <a href="#gallery" className="flex items-end">
               Galeria <ChevronDownIcon className="w-5 h-5 text-purple" />
+            </a>
+
+            <a href="/faq" className="flex items-end">
+              F.A.Q
             </a>
           </nav>
 

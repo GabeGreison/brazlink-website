@@ -1,6 +1,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const neris = localFont({
   src: [
@@ -43,6 +44,8 @@ export default function RootLayout({
       <body className={neris.className}>
         {children}
       </body>
+
+      <GoogleAnalytics gaId="G-HMKZR4NW49" />
     </html>
   );
 }
