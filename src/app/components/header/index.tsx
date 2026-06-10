@@ -19,20 +19,20 @@ export default function Header() {
           </a>
 
 
-          <nav className="gap-2 md:gap-4 flex items-end text-xl md:text-3xl text-brand-dark">
-            <a href="#mission" className="flex items-end">
+          <nav className="gap-2 md:gap-4 flex items-end text-xl md:text-3xl text-brand">
+            <a href="#mission" className="flex items-end hover:text-purple-dark">
               Missão <ChevronDownIcon className="w-5 h-5 text-purple" />
             </a>
 
-            <a href="#equips" className="flex items-end">
+            <a href="#equips" className="flex items-end hover:text-purple-dark">
               Equipamentos <ChevronDownIcon className="w-5 h-5 text-purple" />
             </a>
 
-            <a href="#gallery" className="flex items-end">
+            <a href="#gallery" className="flex items-end hover:text-purple-dark">
               Galeria <ChevronDownIcon className="w-5 h-5 text-purple" />
             </a>
 
-            <a href="/faq" className="flex items-end">
+            <a href="/faq" className="flex items-end hover:text-purple-dark">
               F.A.Q
             </a>
           </nav>
